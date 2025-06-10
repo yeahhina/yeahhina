@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
-import Login from "../view/login";
-import Main from "../view/main";
+import Login from "./components/view/login";
+import Main from "./components/view/main";
 export default function Index() {
   return (
     <View
@@ -8,9 +8,11 @@ export default function Index() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
+        width: "100%",
+        height: "100%",
       }}
     >
-      <Main />
+      <Login />
     </View>
   );
 }
