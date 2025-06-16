@@ -1,15 +1,11 @@
 import { Image, View, TextInput, TouchableOpacity, Text } from "react-native";
 import mainStyle from "./mainStyle";
+import { topPanel } from "../UI/topPanel";
 const Main = () => {
   const sidePanelIcon = require("../assets/icons/sideBar.png");
   return (
     <View style={mainStyle.mainContainer}>
-      <View style={mainStyle.topPanel}>
-        <TouchableOpacity style={mainStyle.sidePanelIcon}>
-          <Image source={sidePanelIcon} style={mainStyle.sidePanelIcon} />
-        </TouchableOpacity>
-        <Text style={mainStyle.title}>Home</Text>
-      </View>
+      {topPanel()}
       <View style={mainStyle.homeMainScroll}>
         <View>
           <Text style={mainStyle.title}>Continue Playing</Text>

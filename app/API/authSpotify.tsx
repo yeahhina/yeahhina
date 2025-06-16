@@ -1,16 +1,17 @@
 import { useEffect } from "react";
 import * as WebBrowser from "expo-web-browser";
 import { makeRedirectUri, useAuthRequest } from "expo-auth-session";
-import { Button } from "react-native";
+import { useRouter } from "expo-router";
 
-WebBrowser.maybeCompleteAuthSession();
+const discovery = {
+  authorizationEndpoint: "https://accounts.spotify.com/authorize",
+  tokenEndpoint: "https://accounts.spotify.com/api/token",
+};
 
-export default function SpotifyApi() {
-  const discovery = {
-    authorizationEndpoint: "https://accounts.spotify.com/authorize",
-    tokenEndpoint: "https://accounts.spotify.com/api/token",
-  };
-  let message = "false";
+export function useSpotifyAuth() {
+  WebBrowser.maybeCompleteAuthSession();
+  const router = useRouter();
+
   const [request, response, promptAsync] = useAuthRequest(
     {
       clientId: "431bb49e81824ac495badb0c6bc5a513",
@@ -26,24 +27,23 @@ export default function SpotifyApi() {
       usePKCE: false,
       redirectUri: makeRedirectUri({
         scheme: "musa",
-        path: "exp://192.168.0.47:8081/--/spotify-auth-callback",
+        path: "callback",
       }),
     },
     discovery
   );
+
   useEffect(() => {
     if (response?.type === "success") {
       const { code } = response.params;
       console.log("Auth success, code:", code);
+      router.navigate("../components/view/main");
     }
   }, [response]);
-  return (
-    <Button
-      disabled={!request}
-      title="Login"
-      onPress={() => {
-        promptAsync();
-      }}
-    />
-  );
+
+  return {
+    request,
+    response,
+    promptAsync,
+  };
 }
