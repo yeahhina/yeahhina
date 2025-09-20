@@ -2,7 +2,7 @@
 - 👀 I’m interested in software engineering.
 - 🌱 I’m currently learning coding and building projects in my free time!
 - 💞️ I’m looking to collaborate on any project to expand my coding knowledge.
-- 📫 To reach me, email me to hina.yeasmin19@gmail.com
+- 📫 To reach me, email me to y.mumtahina19@gmail.com
 - 😄 Pronouns: she/her
 - ⚡ Fun fact: I love Final Fantasy!!!
 
