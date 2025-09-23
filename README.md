@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on any project to expand my coding knowledge.
 - 📫 To reach me, email me to y.mumtahina19@gmail.com
 - 😄 Pronouns: she/her
-- ⚡ Fun fact: I love Final Fantasy!!!
+- ⚡ Fun fact: My favourite game is Final Fantasy X!!!
 
 <!---
 yeahhina/yeahhina is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
