@@ -1,12 +1,7 @@
-- 👋 Hi, I’m @yeahhina
-- 👀 I’m interested in software engineering.
-- 🌱 I’m currently learning coding and building projects in my free time!
-- 💞️ I’m looking to collaborate on any project to expand my coding knowledge.
-- 📫 To reach me, email me to y.mumtahina19@gmail.com
-- 😄 Pronouns: she/her
-- ⚡ Fun fact: My favourite game is Final Fantasy X!!!
+# Hi, I’m Yeasmin 👋  
 
-<!---
-yeahhina/yeahhina is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+## Final-year student at Kingston University | Front-end & Full-stack Developer  
+
+I build responsive and user-friendly web applications using **React, JavaScript, HTML, CSS, Node.js, Python, and Java**. I’m passionate about clean code, intuitive interfaces, and creating projects that are both functional and visually appealing.  
+
+Always learning new technologies and sharing projects here to showcase my work.
