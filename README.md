@@ -1,4 +1,4 @@
-## Computer Science Graduate | Full-stack Developer  
+## Computer Science Graduate
 
 I build applications using **React, Python, and Java**.
 
